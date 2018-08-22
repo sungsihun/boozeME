@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06DA7B88212DB06400A21F3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B87212DB06400A21F3A /* AppDelegate.m */; };
+		06DA7B8B212DB06400A21F3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B8A212DB06400A21F3A /* ViewController.m */; };
+		06DA7B8E212DB06400A21F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B8C212DB06400A21F3A /* Main.storyboard */; };
+		06DA7B90212DB06500A21F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B8F212DB06500A21F3A /* Assets.xcassets */; };
+		06DA7B93212DB06500A21F3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B91212DB06500A21F3A /* LaunchScreen.storyboard */; };
+		06DA7B96212DB06500A21F3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B95212DB06500A21F3A /* main.m */; };
+		06DA7BA0212DB06500A21F3A /* boozeMETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B9F212DB06500A21F3A /* boozeMETests.m */; };
+		06DA7BAB212DB06500A21F3A /* boozeMEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BAA212DB06500A21F3A /* boozeMEUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06DA7B9C212DB06500A21F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06DA7B7B212DB06400A21F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06DA7B82212DB06400A21F3A;
+			remoteInfo = boozeME;
+		};
+		06DA7BA7212DB06500A21F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06DA7B7B212DB06400A21F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06DA7B82212DB06400A21F3A;
+			remoteInfo = boozeME;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06DA7B83212DB06400A21F3A /* boozeME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boozeME.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06DA7B86212DB06400A21F3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		06DA7B87212DB06400A21F3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		06DA7B89212DB06400A21F3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		06DA7B8A212DB06400A21F3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		06DA7B8D212DB06400A21F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06DA7B8F212DB06500A21F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06DA7B92212DB06500A21F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06DA7B94212DB06500A21F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06DA7B95212DB06500A21F3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06DA7B9B212DB06500A21F3A /* boozeMETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boozeMETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06DA7B9F212DB06500A21F3A /* boozeMETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boozeMETests.m; sourceTree = "<group>"; };
+		06DA7BA1212DB06500A21F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06DA7BA6212DB06500A21F3A /* boozeMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boozeMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06DA7BAA212DB06500A21F3A /* boozeMEUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boozeMEUITests.m; sourceTree = "<group>"; };
+		06DA7BAC212DB06500A21F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06DA7B80212DB06400A21F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06DA7B98212DB06500A21F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06DA7BA3212DB06500A21F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06DA7B7A212DB06400A21F3A = {
+			isa = PBXGroup;
+			children = (
+				06DA7B85212DB06400A21F3A /* boozeME */,
+				06DA7B9E212DB06500A21F3A /* boozeMETests */,
+				06DA7BA9212DB06500A21F3A /* boozeMEUITests */,
+				06DA7B84212DB06400A21F3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06DA7B84212DB06400A21F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06DA7B83212DB06400A21F3A /* boozeME.app */,
+				06DA7B9B212DB06500A21F3A /* boozeMETests.xctest */,
+				06DA7BA6212DB06500A21F3A /* boozeMEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06DA7B85212DB06400A21F3A /* boozeME */ = {
+			isa = PBXGroup;
+			children = (
+				06DA7B86212DB06400A21F3A /* AppDelegate.h */,
+				06DA7B87212DB06400A21F3A /* AppDelegate.m */,
+				06DA7B89212DB06400A21F3A /* ViewController.h */,
+				06DA7B8A212DB06400A21F3A /* ViewController.m */,
+				06DA7B8C212DB06400A21F3A /* Main.storyboard */,
+				06DA7B8F212DB06500A21F3A /* Assets.xcassets */,
+				06DA7B91212DB06500A21F3A /* LaunchScreen.storyboard */,
+				06DA7B94212DB06500A21F3A /* Info.plist */,
+				06DA7B95212DB06500A21F3A /* main.m */,
+			);
+			path = boozeME;
+			sourceTree = "<group>";
+		};
+		06DA7B9E212DB06500A21F3A /* boozeMETests */ = {
+			isa = PBXGroup;
+			children = (
+				06DA7B9F212DB06500A21F3A /* boozeMETests.m */,
+				06DA7BA1212DB06500A21F3A /* Info.plist */,
+			);
+			path = boozeMETests;
+			sourceTree = "<group>";
+		};
+		06DA7BA9212DB06500A21F3A /* boozeMEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06DA7BAA212DB06500A21F3A /* boozeMEUITests.m */,
+				06DA7BAC212DB06500A21F3A /* Info.plist */,
+			);
+			path = boozeMEUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06DA7B82212DB06400A21F3A /* boozeME */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06DA7BAF212DB06500A21F3A /* Build configuration list for PBXNativeTarget "boozeME" */;
+			buildPhases = (
+				06DA7B7F212DB06400A21F3A /* Sources */,
+				06DA7B80212DB06400A21F3A /* Frameworks */,
+				06DA7B81212DB06400A21F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = boozeME;
+			productName = boozeME;
+			productReference = 06DA7B83212DB06400A21F3A /* boozeME.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06DA7B9A212DB06500A21F3A /* boozeMETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06DA7BB2212DB06500A21F3A /* Build configuration list for PBXNativeTarget "boozeMETests" */;
+			buildPhases = (
+				06DA7B97212DB06500A21F3A /* Sources */,
+				06DA7B98212DB06500A21F3A /* Frameworks */,
+				06DA7B99212DB06500A21F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06DA7B9D212DB06500A21F3A /* PBXTargetDependency */,
+			);
+			name = boozeMETests;
+			productName = boozeMETests;
+			productReference = 06DA7B9B212DB06500A21F3A /* boozeMETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06DA7BA5212DB06500A21F3A /* boozeMEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06DA7BB5212DB06500A21F3A /* Build configuration list for PBXNativeTarget "boozeMEUITests" */;
+			buildPhases = (
+				06DA7BA2212DB06500A21F3A /* Sources */,
+				06DA7BA3212DB06500A21F3A /* Frameworks */,
+				06DA7BA4212DB06500A21F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06DA7BA8212DB06500A21F3A /* PBXTargetDependency */,
+			);
+			name = boozeMEUITests;
+			productName = boozeMEUITests;
+			productReference = 06DA7BA6212DB06500A21F3A /* boozeMEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06DA7B7B212DB06400A21F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = NICE;
+				TargetAttributes = {
+					06DA7B82212DB06400A21F3A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					06DA7B9A212DB06500A21F3A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 06DA7B82212DB06400A21F3A;
+					};
+					06DA7BA5212DB06500A21F3A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 06DA7B82212DB06400A21F3A;
+					};
+				};
+			};
+			buildConfigurationList = 06DA7B7E212DB06400A21F3A /* Build configuration list for PBXProject "boozeME" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06DA7B7A212DB06400A21F3A;
+			productRefGroup = 06DA7B84212DB06400A21F3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06DA7B82212DB06400A21F3A /* boozeME */,
+				06DA7B9A212DB06500A21F3A /* boozeMETests */,
+				06DA7BA5212DB06500A21F3A /* boozeMEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06DA7B81212DB06400A21F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06DA7B93212DB06500A21F3A /* LaunchScreen.storyboard in Resources */,
+				06DA7B90212DB06500A21F3A /* Assets.xcassets in Resources */,
+				06DA7B8E212DB06400A21F3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06DA7B99212DB06500A21F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06DA7BA4212DB06500A21F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06DA7B7F212DB06400A21F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06DA7B8B212DB06400A21F3A /* ViewController.m in Sources */,
+				06DA7B96212DB06500A21F3A /* main.m in Sources */,
+				06DA7B88212DB06400A21F3A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06DA7B97212DB06500A21F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06DA7BA0212DB06500A21F3A /* boozeMETests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06DA7BA2212DB06500A21F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06DA7BAB212DB06500A21F3A /* boozeMEUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06DA7B9D212DB06500A21F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06DA7B82212DB06400A21F3A /* boozeME */;
+			targetProxy = 06DA7B9C212DB06500A21F3A /* PBXContainerItemProxy */;
+		};
+		06DA7BA8212DB06500A21F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06DA7B82212DB06400A21F3A /* boozeME */;
+			targetProxy = 06DA7BA7212DB06500A21F3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06DA7B8C212DB06400A21F3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06DA7B8D212DB06400A21F3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06DA7B91212DB06500A21F3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06DA7B92212DB06500A21F3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06DA7BAD212DB06500A21F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06DA7BAE212DB06500A21F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06DA7BB0212DB06500A21F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = boozeME/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nice.boozeME;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06DA7BB1212DB06500A21F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = boozeME/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nice.boozeME;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		06DA7BB3212DB06500A21F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = boozeMETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nice.boozeMETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/boozeME.app/boozeME";
+			};
+			name = Debug;
+		};
+		06DA7BB4212DB06500A21F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = boozeMETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nice.boozeMETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/boozeME.app/boozeME";
+			};
+			name = Release;
+		};
+		06DA7BB6212DB06500A21F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = boozeMEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nice.boozeMEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = boozeME;
+			};
+			name = Debug;
+		};
+		06DA7BB7212DB06500A21F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = boozeMEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nice.boozeMEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = boozeME;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06DA7B7E212DB06400A21F3A /* Build configuration list for PBXProject "boozeME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06DA7BAD212DB06500A21F3A /* Debug */,
+				06DA7BAE212DB06500A21F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06DA7BAF212DB06500A21F3A /* Build configuration list for PBXNativeTarget "boozeME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06DA7BB0212DB06500A21F3A /* Debug */,
+				06DA7BB1212DB06500A21F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06DA7BB2212DB06500A21F3A /* Build configuration list for PBXNativeTarget "boozeMETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06DA7BB3212DB06500A21F3A /* Debug */,
+				06DA7BB4212DB06500A21F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06DA7BB5212DB06500A21F3A /* Build configuration list for PBXNativeTarget "boozeMEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06DA7BB6212DB06500A21F3A /* Debug */,
+				06DA7BB7212DB06500A21F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06DA7B7B212DB06400A21F3A /* Project object */;
+}
