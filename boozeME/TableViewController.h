@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  boozeME
 //
 //  Created by NICE on 2018-08-22.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TableViewController : UIViewController
 
 @end
-

@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		06DA7B88212DB06400A21F3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B87212DB06400A21F3A /* AppDelegate.m */; };
-		06DA7B8B212DB06400A21F3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B8A212DB06400A21F3A /* ViewController.m */; };
 		06DA7B8E212DB06400A21F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B8C212DB06400A21F3A /* Main.storyboard */; };
 		06DA7B90212DB06500A21F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B8F212DB06500A21F3A /* Assets.xcassets */; };
 		06DA7B93212DB06500A21F3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B91212DB06500A21F3A /* LaunchScreen.storyboard */; };
 		06DA7B96212DB06500A21F3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B95212DB06500A21F3A /* main.m */; };
 		06DA7BA0212DB06500A21F3A /* boozeMETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B9F212DB06500A21F3A /* boozeMETests.m */; };
 		06DA7BAB212DB06500A21F3A /* boozeMEUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BAA212DB06500A21F3A /* boozeMEUITests.m */; };
+		06DA7BBA212DB83C00A21F3A /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BB9212DB83C00A21F3A /* TitleViewController.m */; };
+		06DA7BBD212DB85A00A21F3A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BBC212DB85A00A21F3A /* TableViewController.m */; };
+		06DA7BC0212DB86400A21F3A /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BBF212DB86400A21F3A /* CollectionViewController.m */; };
+		06DA7BC3212DB87E00A21F3A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BC2212DB87E00A21F3A /* DetailViewController.m */; };
+		06DA7BC6212DBBBA00A21F3A /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BC5212DBBBA00A21F3A /* TableViewCell.m */; };
+		06DA7BC9212DBBCD00A21F3A /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BC8212DBBCD00A21F3A /* CollectionViewCell.m */; };
+		06DA7BCC212DC44500A21F3A /* Booze.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BCB212DC44500A21F3A /* Booze.m */; };
+		06DA7BCF212DCAF700A21F3A /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BCE212DCAF700A21F3A /* NetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +45,6 @@
 		06DA7B83212DB06400A21F3A /* boozeME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boozeME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DA7B86212DB06400A21F3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06DA7B87212DB06400A21F3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		06DA7B89212DB06400A21F3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		06DA7B8A212DB06400A21F3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		06DA7B8D212DB06400A21F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06DA7B8F212DB06500A21F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06DA7B92212DB06500A21F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,22 @@
 		06DA7BA6212DB06500A21F3A /* boozeMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boozeMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DA7BAA212DB06500A21F3A /* boozeMEUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boozeMEUITests.m; sourceTree = "<group>"; };
 		06DA7BAC212DB06500A21F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06DA7BB8212DB83C00A21F3A /* TitleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
+		06DA7BB9212DB83C00A21F3A /* TitleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
+		06DA7BBB212DB85A00A21F3A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		06DA7BBC212DB85A00A21F3A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		06DA7BBE212DB86400A21F3A /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		06DA7BBF212DB86400A21F3A /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		06DA7BC1212DB87E00A21F3A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		06DA7BC2212DB87E00A21F3A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		06DA7BC4212DBBBA00A21F3A /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		06DA7BC5212DBBBA00A21F3A /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		06DA7BC7212DBBCD00A21F3A /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		06DA7BC8212DBBCD00A21F3A /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		06DA7BCA212DC44500A21F3A /* Booze.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Booze.h; sourceTree = "<group>"; };
+		06DA7BCB212DC44500A21F3A /* Booze.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Booze.m; sourceTree = "<group>"; };
+		06DA7BCD212DCAF700A21F3A /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		06DA7BCE212DCAF700A21F3A /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +124,23 @@
 			children = (
 				06DA7B86212DB06400A21F3A /* AppDelegate.h */,
 				06DA7B87212DB06400A21F3A /* AppDelegate.m */,
-				06DA7B89212DB06400A21F3A /* ViewController.h */,
-				06DA7B8A212DB06400A21F3A /* ViewController.m */,
 				06DA7B8C212DB06400A21F3A /* Main.storyboard */,
+				06DA7BCD212DCAF700A21F3A /* NetworkManager.h */,
+				06DA7BCE212DCAF700A21F3A /* NetworkManager.m */,
+				06DA7BC4212DBBBA00A21F3A /* TableViewCell.h */,
+				06DA7BC5212DBBBA00A21F3A /* TableViewCell.m */,
+				06DA7BC7212DBBCD00A21F3A /* CollectionViewCell.h */,
+				06DA7BC8212DBBCD00A21F3A /* CollectionViewCell.m */,
+				06DA7BCA212DC44500A21F3A /* Booze.h */,
+				06DA7BCB212DC44500A21F3A /* Booze.m */,
+				06DA7BB8212DB83C00A21F3A /* TitleViewController.h */,
+				06DA7BB9212DB83C00A21F3A /* TitleViewController.m */,
+				06DA7BBB212DB85A00A21F3A /* TableViewController.h */,
+				06DA7BBC212DB85A00A21F3A /* TableViewController.m */,
+				06DA7BBE212DB86400A21F3A /* CollectionViewController.h */,
+				06DA7BBF212DB86400A21F3A /* CollectionViewController.m */,
+				06DA7BC1212DB87E00A21F3A /* DetailViewController.h */,
+				06DA7BC2212DB87E00A21F3A /* DetailViewController.m */,
 				06DA7B8F212DB06500A21F3A /* Assets.xcassets */,
 				06DA7B91212DB06500A21F3A /* LaunchScreen.storyboard */,
 				06DA7B94212DB06500A21F3A /* Info.plist */,
@@ -262,9 +297,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06DA7B8B212DB06400A21F3A /* ViewController.m in Sources */,
+				06DA7BBA212DB83C00A21F3A /* TitleViewController.m in Sources */,
+				06DA7BC0212DB86400A21F3A /* CollectionViewController.m in Sources */,
+				06DA7BC9212DBBCD00A21F3A /* CollectionViewCell.m in Sources */,
 				06DA7B96212DB06500A21F3A /* main.m in Sources */,
+				06DA7BBD212DB85A00A21F3A /* TableViewController.m in Sources */,
+				06DA7BC6212DBBBA00A21F3A /* TableViewCell.m in Sources */,
+				06DA7BCC212DC44500A21F3A /* Booze.m in Sources */,
 				06DA7B88212DB06400A21F3A /* AppDelegate.m in Sources */,
+				06DA7BCF212DCAF700A21F3A /* NetworkManager.m in Sources */,
+				06DA7BC3212DB87E00A21F3A /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
