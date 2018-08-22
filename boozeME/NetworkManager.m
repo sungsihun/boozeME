@@ -45,9 +45,12 @@
     
     NSMutableArray *boozes = [@[] mutableCopy];
     for (NSDictionary *booze in info[@"result"]) {
-      NSLog(@"getting the info data: %@", request);
+      NSLog(@"getting the info data: %@", booze);
       [boozes addObject:[[Booze alloc] initWithInfo:booze]];
     }
+    
+    
+    
     completion(boozes);
   }];
   NSLog(@"Created Task");
