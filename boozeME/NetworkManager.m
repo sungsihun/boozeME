@@ -8,6 +8,7 @@
 
 #import "NetworkManager.h"
 #import "Booze.h"
+#import "Stores.h"
 
 @implementation NetworkManager
 
@@ -54,9 +55,33 @@
     NSLog(@"Created Task");
     [task resume];
     NSLog(@"Resumed task");
-  
-  
-  
 }
+
+
++ (void)getStores:(void (^)(NSArray* stores))completion {
+  NSURL *url = [NSURL URLWithString:@"https://lcboapi.com/stores?lat=43.6447391&lon=-79.394702"];
+
+  NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+  [urlRequest setHTTPMethod:@"GET"];
+  [urlRequest setValue:@"Token token=MDo2ZmI3OTY1ZS1hNjBkLTExZTgtYjAwMS1mM2U4OTFhNmEzYjk6bjh6ZGRzYWhiVkNhYjE3N0FmRG9mejRWeUJHQU9JdmpoUXJx" forHTTPHeaderField:@"Authorization"];
+
+  NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession] dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+
+    NSError *jsonError = nil;
+    NSDictionary* info = [NSJSONSerialization
+                          JSONObjectWithData:data
+                          options:0
+                          error:&jsonError];
+
+    NSMutableArray *stores = [@[] mutableCopy];
+    for (NSDictionary *storeInfo in info[@"result"]) {
+      [stores addObject:[[Stores alloc] initWithInfo:storeInfo]];
+    }
+    completion(stores);
+  }];
+
+  [downloadTask resume];
+}
+
 
 @end

@@ -11,6 +11,9 @@
 		062F924D212F32B1006F0BDD /* Moonlight Sonata.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 062F9249212F32B0006F0BDD /* Moonlight Sonata.mp3 */; };
 		062F924E212F32B1006F0BDD /* 02 Party In The USA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 062F924A212F32B1006F0BDD /* 02 Party In The USA.mp3 */; };
 		062F924F212F32B1006F0BDD /* Party Up In Here.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 062F924B212F32B1006F0BDD /* Party Up In Here.mp3 */; };
+		062F9252212F35C8006F0BDD /* Stores.m in Sources */ = {isa = PBXBuildFile; fileRef = 062F9251212F35C8006F0BDD /* Stores.m */; };
+		062F9255212F3A21006F0BDD /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 062F9254212F3A21006F0BDD /* StoreViewController.m */; };
+		062F9257212F3C99006F0BDD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062F9256212F3C99006F0BDD /* MapKit.framework */; };
 		06DA7B88212DB06400A21F3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B87212DB06400A21F3A /* AppDelegate.m */; };
 		06DA7B8E212DB06400A21F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B8C212DB06400A21F3A /* Main.storyboard */; };
 		06DA7B90212DB06500A21F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B8F212DB06500A21F3A /* Assets.xcassets */; };
@@ -51,6 +54,11 @@
 		062F9249212F32B0006F0BDD /* Moonlight Sonata.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Moonlight Sonata.mp3"; path = "../../../../../Downloads/Moonlight Sonata.mp3"; sourceTree = "<group>"; };
 		062F924A212F32B1006F0BDD /* 02 Party In The USA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "02 Party In The USA.mp3"; path = "../../../../../Downloads/02 Party In The USA.mp3"; sourceTree = "<group>"; };
 		062F924B212F32B1006F0BDD /* Party Up In Here.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Party Up In Here.mp3"; path = "../../../../../Downloads/Party Up In Here.mp3"; sourceTree = "<group>"; };
+		062F9250212F35C8006F0BDD /* Stores.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stores.h; sourceTree = "<group>"; };
+		062F9251212F35C8006F0BDD /* Stores.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stores.m; sourceTree = "<group>"; };
+		062F9253212F3A21006F0BDD /* StoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		062F9254212F3A21006F0BDD /* StoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		062F9256212F3C99006F0BDD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		06DA7B83212DB06400A21F3A /* boozeME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boozeME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DA7B86212DB06400A21F3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06DA7B87212DB06400A21F3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062F9257212F3C99006F0BDD /* MapKit.framework in Frameworks */,
 				251878BE212F0EEC0094DD99 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +148,8 @@
 				06DA7B8C212DB06400A21F3A /* Main.storyboard */,
 				06DA7BCD212DCAF700A21F3A /* NetworkManager.h */,
 				06DA7BCE212DCAF700A21F3A /* NetworkManager.m */,
+				062F9250212F35C8006F0BDD /* Stores.h */,
+				062F9251212F35C8006F0BDD /* Stores.m */,
 				06DA7BC4212DBBBA00A21F3A /* TableViewCell.h */,
 				06DA7BC5212DBBBA00A21F3A /* TableViewCell.m */,
 				06DA7BC7212DBBCD00A21F3A /* CollectionViewCell.h */,
@@ -153,6 +164,8 @@
 				06DA7BBF212DB86400A21F3A /* CollectionViewController.m */,
 				06DA7BC1212DB87E00A21F3A /* DetailViewController.h */,
 				06DA7BC2212DB87E00A21F3A /* DetailViewController.m */,
+				062F9253212F3A21006F0BDD /* StoreViewController.h */,
+				062F9254212F3A21006F0BDD /* StoreViewController.m */,
 				062F924A212F32B1006F0BDD /* 02 Party In The USA.mp3 */,
 				062F9248212F32B0006F0BDD /* 03 Bootylicious.mp3 */,
 				062F9249212F32B0006F0BDD /* Moonlight Sonata.mp3 */,
@@ -186,6 +199,7 @@
 		251878BC212F0EEB0094DD99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				062F9256212F3C99006F0BDD /* MapKit.framework */,
 				251878BD212F0EEC0094DD99 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -327,11 +341,13 @@
 			files = (
 				06DA7BBA212DB83C00A21F3A /* TitleViewController.m in Sources */,
 				06DA7BC0212DB86400A21F3A /* CollectionViewController.m in Sources */,
+				062F9252212F35C8006F0BDD /* Stores.m in Sources */,
 				06DA7BC9212DBBCD00A21F3A /* CollectionViewCell.m in Sources */,
 				06DA7B96212DB06500A21F3A /* main.m in Sources */,
 				06DA7BBD212DB85A00A21F3A /* TableViewController.m in Sources */,
 				06DA7BC6212DBBBA00A21F3A /* TableViewCell.m in Sources */,
 				06DA7BCC212DC44500A21F3A /* Booze.m in Sources */,
+				062F9255212F3A21006F0BDD /* StoreViewController.m in Sources */,
 				06DA7B88212DB06400A21F3A /* AppDelegate.m in Sources */,
 				06DA7BCF212DCAF700A21F3A /* NetworkManager.m in Sources */,
 				06DA7BC3212DB87E00A21F3A /* DetailViewController.m in Sources */,

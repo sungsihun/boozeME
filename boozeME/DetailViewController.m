@@ -10,14 +10,15 @@
 #import "Booze.h"
 
 @interface DetailViewController () <UIScrollViewDelegate>
-@property (nonatomic)  UILabel *nameLabel;
-@property (nonatomic)  UIImageView *imageView;
-@property (nonatomic)  UILabel *priceLabel;
-@property (nonatomic)  UILabel *servingLabel;
-@property (nonatomic)  UILabel *tastingLabel;
-@property (nonatomic)  UILabel *styleLabel;
+@property (nonatomic) UILabel *nameLabel;
+@property (nonatomic) UIImageView *imageView;
+@property (nonatomic) UILabel *priceLabel;
+@property (nonatomic) UILabel *servingLabel;
+@property (nonatomic) UILabel *tastingLabel;
+@property (nonatomic) UILabel *styleLabel;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-
+@property (weak, nonatomic) IBOutlet UIButton *button;
+//@property (nonatomic) UIButton *button;
 @end
 
 @implementation DetailViewController
@@ -92,8 +93,6 @@
   
   self.servingLabel.translatesAutoresizingMaskIntoConstraints = NO;
   
-  self.servingLabel.translatesAutoresizingMaskIntoConstraints = NO;
-  
   [self.servingLabel.centerXAnchor
    constraintEqualToAnchor:self.scrollView.centerXAnchor].active = YES;
   [self.servingLabel.topAnchor
@@ -111,8 +110,6 @@
   self.tastingLabel.numberOfLines = 0;
   self.tastingLabel.backgroundColor = UIColor.whiteColor;
   [self.scrollView addSubview:self.tastingLabel];
-  
-  self.tastingLabel.translatesAutoresizingMaskIntoConstraints = NO;
   
   self.tastingLabel.translatesAutoresizingMaskIntoConstraints = NO;
   
@@ -135,14 +132,31 @@
   
   self.styleLabel.translatesAutoresizingMaskIntoConstraints = NO;
   
-  self.styleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-  
   [self.styleLabel.centerXAnchor
    constraintEqualToAnchor:self.scrollView.centerXAnchor].active = YES;
   [self.styleLabel.topAnchor
    constraintEqualToAnchor:self.tastingLabel.bottomAnchor constant:10].active = YES;
   [self.styleLabel.widthAnchor
    constraintEqualToAnchor:self.scrollView.widthAnchor].active = YES;
+  
+  
+//  // button
+  self.button.translatesAutoresizingMaskIntoConstraints = NO;
+  
+  [self.button.centerXAnchor
+   constraintEqualToAnchor:self.scrollView.centerXAnchor].active = YES;
+  [self.button.bottomAnchor
+   constraintEqualToAnchor:self.imageView.topAnchor constant:-5].active = YES;
+  [self.button.widthAnchor constraintEqualToConstant:50].active = YES;
+  
+  [self.button.layer setBorderWidth:3];
+  [self.button.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+  [self.button setTintColor:[UIColor clearColor]];
+  
+  
+
+  
+  
 }
 
 

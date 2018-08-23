@@ -10,5 +10,5 @@
 
 @interface NetworkManager : NSObject
 +(void)getInfo:(NSURL *)url with: (void (^)(NSMutableArray *))completion;
-
++ (void)getStores:(void (^)(NSArray* stores))completion;
 @end

@@ -53,6 +53,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
   if ([segue.identifier isEqualToString:@"detailViewSegue"]) {
+    
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
     Booze *booze = self.objects[indexPath.item];
     
@@ -60,8 +61,6 @@
     dvc.booze = booze;
   }
 }
-
-
 
 
 
