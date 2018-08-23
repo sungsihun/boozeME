@@ -10,20 +10,20 @@
 #import "TableViewCell.h"
 #import "NetworkManager.h"
 #import "CollectionViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface TableViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface TableViewController () <UITableViewDataSource, UITableViewDelegate, AVAudioPlayerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSArray<UIImage*> *imageArray;
 @property (nonatomic) NSArray<NSString*> *stringArray;
 @property (nonatomic) NSString *urlString;
-
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 @end
 
 @implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
   
     UIImage *image1 = [UIImage imageNamed:@"sunset.jpg"];
     UIImage *image2 = [UIImage imageNamed:@"cheers.jpg"];
@@ -36,10 +36,8 @@
     NSString *string3 = @"messy";
     NSString *string4 = @"rage";
     self.stringArray = [NSArray arrayWithObjects:string1, string2, string3, string4, nil];
-
   
 }
-
 
 #pragma mark - data source
 
@@ -69,22 +67,34 @@
     switch (indexPath.row) {
       case 0:
               cvc.url = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=10&q=beer"];
+        [self playSong:@"Moonlight Sonata"];
         break;
       case 1:
               cvc.url = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=10&q=wine"];
+        [self playSong:@"02 Party In The USA"];
         break;
       case 2:
               cvc.url = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=3"];
+        [self playSong:@"03 Bootylicious"];
         break;
       case 3:
               cvc.url = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=1"];
+        [self playSong:@"Party Up In Here"];
         break;
-        
     }
   }
 }
 
-
+-(void)playSong:(NSString*)filePath {
+  
+  NSBundle *mainBundle = [NSBundle mainBundle];
+  NSString *path = [mainBundle pathForResource:filePath ofType:@"mp3"];
+  NSData *fileData = [NSData dataWithContentsOfFile:path];
+  self.audioPlayer = [[AVAudioPlayer alloc] initWithData:fileData error:nil];
+  [self.audioPlayer setDelegate:self];
+  [self.audioPlayer prepareToPlay];
+  [self.audioPlayer play];
+}
 
 
 @end
