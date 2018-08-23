@@ -19,24 +19,35 @@
 @property (nonatomic) NSMutableArray<Booze*> *rageArray;
 @property (nonatomic) NSMutableArray<Booze*> *semiSocialArray;
 @property (nonatomic) NSMutableArray<Booze*> *messyArray;
+
+@property (nonatomic,retain) UIActivityIndicatorView *activityIndicator;
 @end
 
 @implementation CollectionViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+  [super viewDidLoad];
   
-    NSLog(@"Getting Booze");
+  NSLog(@"Getting Booze");
   
-//    NSURL *messyUrl = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=3"];
+  self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+  
+  self.activityIndicator.center = self.view.center;
+  
+  [self.view addSubview:self.activityIndicator];
+  
+  [self.activityIndicator startAnimating];
 
   [NetworkManager getInfo:self.url with:^(NSMutableArray *boozes) {
-      self.objects = boozes;
-//      NSLog(@"View controller got data: %@", self.objects);
-      [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+    self.objects = boozes;
+//  NSLog(@"View controller got data: %@", self.objects);
+    
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         [self.collectionView reloadData];
-      }];
     }];
+  }];
+  
+  
 }
 
 
@@ -65,6 +76,8 @@
   CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
   
   [cell setImage: self.objects[indexPath.row]];
+  
+  [self.activityIndicator stopAnimating];
   
   return cell;
 }

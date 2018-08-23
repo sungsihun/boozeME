@@ -12,15 +12,6 @@
 @implementation NetworkManager
 
 +(void)getInfo:(NSURL *)url with: (void (^)(NSMutableArray *))completion {
-//  NSURL *rageUrl = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=1"];
-//  NSURL *messyUrl = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=3"];
-//  NSURL *semiSocialUrl = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=10&q=wine"];
-//  NSURL *unwindUrl = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=10&q=beer"];
-////  NSArray *urlArray = [NSArray arrayWithObjects:rageUrl, messyUrl, semiSocialUrl, unwindUrl, nil];
-//    NSArray *urlArray = [NSArray arrayWithObjects:rageUrl, nil];
-
-  
-  
 
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setValue:@"Token token=MDo2ZmI3OTY1ZS1hNjBkLTExZTgtYjAwMS1mM2U4OTFhNmEzYjk6bjh6ZGRzYWhiVkNhYjE3N0FmRG9mejRWeUJHQU9JdmpoUXJx" forHTTPHeaderField:@"Authorization"];
