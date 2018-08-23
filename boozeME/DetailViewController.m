@@ -7,8 +7,15 @@
 //
 
 #import "DetailViewController.h"
+#import "Booze.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *servingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tastingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *styleLabel;
 
 @end
 
@@ -16,22 +23,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+  self.imageView.image = self.booze.image;
+  
+  self.nameLabel.text = self.booze.name;
+  self.nameLabel.lineBreakMode = NSLineBreakByWordWrapping;
+  self.nameLabel.numberOfLines = 0;
+  
+  self.priceLabel.text = [NSString stringWithFormat:@"$%.02f", self.booze.price.floatValue/100];
+  
+  self.servingLabel.text = self.booze.servingSuggestion;
+  self.servingLabel.lineBreakMode = NSLineBreakByWordWrapping;
+  self.servingLabel.numberOfLines = 0;
+  
+  self.tastingLabel.text = self.booze.tastingNote;
+  self.tastingLabel.lineBreakMode = NSLineBreakByWordWrapping;
+  self.tastingLabel.numberOfLines = 0;
+  
+  self.styleLabel.text = self.booze.style;
+  self.styleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+  self.styleLabel.numberOfLines = 0;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

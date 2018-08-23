@@ -7,16 +7,17 @@
 //
 
 #import "CollectionViewCell.h"
+#import "Booze.h"
 
 @interface CollectionViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-
 @end
 
 @implementation CollectionViewCell
 
-
-
-
+- (void)setImage:(Booze *)booze {
+  self.imageView.image = booze.image;
+  _booze = booze;
+}
 
 @end

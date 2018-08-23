@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NetworkManager : NSObject
-
-+(void)getInfo:(void (^)(NSMutableArray *))completion;
++(void)getInfo:(NSURL *)url with: (void (^)(NSMutableArray *))completion;
 
 @end

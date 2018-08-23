@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Booze;
 
 @interface DetailViewController : UIViewController
-
+@property (nonatomic) Booze *booze;
 @end

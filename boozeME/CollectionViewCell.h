@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Booze;
 
 @interface CollectionViewCell : UICollectionViewCell
-
+@property (nonatomic) Booze *booze;
+- (void)setImage:(Booze *)booze;
 @end

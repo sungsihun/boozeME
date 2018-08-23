@@ -20,13 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-  _objects = [@[] mutableCopy];
-  NSLog(@"Getting Booze");
-  [NetworkManager getInfo:^(NSMutableArray *boozes) {
-    self.objects = boozes;
-    NSLog(@"View controller got data: %@", self.objects);
-
-  }];
+//  _objects = [@[] mutableCopy];
+//  NSLog(@"Getting Booze");
+//  [NetworkManager getInfo:^(NSMutableArray *boozes) {
+//    self.objects = boozes;
+//    NSLog(@"View controller got data: %@", self.objects);
+//
+//  }];
   
 }
 

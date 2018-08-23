@@ -10,52 +10,62 @@
 #import "Booze.h"
 
 @implementation NetworkManager
-+(void)getInfo:(void (^)(NSMutableArray *))completion {
-  NSURL *url = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&alcohol_content.desc"];
+
++(void)getInfo:(NSURL *)url with: (void (^)(NSMutableArray *))completion {
+//  NSURL *rageUrl = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=1"];
+//  NSURL *messyUrl = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=3"];
+//  NSURL *semiSocialUrl = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=10&q=wine"];
+//  NSURL *unwindUrl = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=10&q=beer"];
+////  NSArray *urlArray = [NSArray arrayWithObjects:rageUrl, messyUrl, semiSocialUrl, unwindUrl, nil];
+//    NSArray *urlArray = [NSArray arrayWithObjects:rageUrl, nil];
+
   
-  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-  [request setValue:@"Token token=MDo2ZmI3OTY1ZS1hNjBkLTExZTgtYjAwMS1mM2U4OTFhNmEzYjk6bjh6ZGRzYWhiVkNhYjE3N0FmRG9mejRWeUJHQU9JdmpoUXJx" forHTTPHeaderField:@"Authorization"];
   
-  NSLog(@"creating task");
+
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setValue:@"Token token=MDo2ZmI3OTY1ZS1hNjBkLTExZTgtYjAwMS1mM2U4OTFhNmEzYjk6bjh6ZGRzYWhiVkNhYjE3N0FmRG9mejRWeUJHQU9JdmpoUXJx" forHTTPHeaderField:@"Authorization"];
+    
+    NSLog(@"creating task");
+    
+    NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+//      NSLog(@"completed request: %@", response);
+      
+      if (error != nil) {
+//        NSLog(@"error making the request: %@", error.localizedDescription);
+        abort();
+      }
+      
+      NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
+      if (statusCode < 200 || statusCode >=300) {
+//        NSLog(@"Non-ok error code: %@", response);
+        abort();
+      }
+      
+      NSError *jsonError = nil;
+      NSDictionary *info = [NSJSONSerialization
+                            JSONObjectWithData:data
+                            options:0
+                            error:&jsonError];
+      
+      if (jsonError != nil) {
+       NSLog(@"Error parsing JSON %@", jsonError.localizedDescription);
+        abort();
+      }
+      
+      NSMutableArray *boozes = [@[] mutableCopy];
+      for (NSDictionary *booze in info[@"result"]) {
+//        NSLog(@"getting the info data: %@", booze);
+        [boozes addObject:[[Booze alloc] initWithInfo:booze]];
+      }
+      completion(boozes);
+    }];
+    
+    NSLog(@"Created Task");
+    [task resume];
+    NSLog(@"Resumed task");
   
-  NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-    NSLog(@"completed request: %@", response);
-    
-    if (error != nil) {
-      NSLog(@"error making the request: %@", error.localizedDescription);
-      abort();
-    }
-    
-    NSInteger statusCode = [(NSHTTPURLResponse*)response statusCode];
-    if (statusCode < 200 || statusCode >=300) {
-      NSLog(@"Non-ok error code: %@", response);
-      abort();
-    }
-    
-    NSError *jsonError = nil;
-    NSDictionary *info = [NSJSONSerialization
-                          JSONObjectWithData:data
-                          options:0
-                          error:&jsonError];
-    
-    if (jsonError != nil) {
-      NSLog(@"Error parsing JSON %@", jsonError.localizedDescription);
-      abort();
-    }
-    
-    NSMutableArray *boozes = [@[] mutableCopy];
-    for (NSDictionary *booze in info[@"result"]) {
-      NSLog(@"getting the info data: %@", booze);
-      [boozes addObject:[[Booze alloc] initWithInfo:booze]];
-    }
-    
-    
-    
-    completion(boozes);
-  }];
-  NSLog(@"Created Task");
-  [task resume];
-  NSLog(@"Resumed task");
+  
+  
 }
 
 @end

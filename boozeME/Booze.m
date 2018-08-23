@@ -33,28 +33,30 @@
     
     
     if (info[@"serving_suggestion"] == (id)[NSNull null]) {
-      _servingSuggestion = @"no data";
+      _servingSuggestion = @"Goes great with pizza and cheese and chips!";
     } else {
       _servingSuggestion = info[@"serving_suggestion"];
     }
     
     if (info[@"tasting_note"] == (id)[NSNull null]) {
-      _tastingNote = @"no data";
+      _tastingNote = @"A taste of alcohol, and more!";
     } else {
       _tastingNote = info[@"tasting_note"];
     }
     
     if (info[@"style"] == (id)[NSNull null]) {
-      _style = @"no data";
+      _style = @"This has better style than you bud!";
     } else {
       _style = info[@"style"];
     }
     
     if (info[@"image_url"] == (id)[NSNull null]) {
-      _image = [UIImage imageNamed:@"Booze.jpg"];
+      _image = [UIImage imageNamed:@"booze.jpg"];
     } else {
       NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:info[@"image_url"]]];
       _image = [UIImage imageWithData:data];
+      
+
     }
 
   }

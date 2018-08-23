@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TableViewCell : UITableViewCell
+-(void)setLabelWithString:(NSString*)string;
+-(void)setImageViewWithImage:(UIImage*)image;
+
 
 @end

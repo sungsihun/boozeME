@@ -18,18 +18,12 @@
 
 @implementation TableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+-(void)setLabelWithString:(NSString*)string {
+  self.label.text = string;
 }
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(void)setImageViewWithImage:(UIImage*)image {
+  self.imageView.image = image;
 }
-
-
 
 
 @end

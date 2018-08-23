@@ -8,33 +8,63 @@
 
 #import "CollectionViewController.h"
 #import "CollectionViewCell.h"
+#import "NetworkManager.h"
+#import "Booze.h"
+#import "DetailViewController.h"
 
 @interface CollectionViewController () <UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-
+@property (nonatomic) NSArray<Booze*> *objects;
+@property (nonatomic) NSMutableArray<Booze*> *unwindArray;
+@property (nonatomic) NSMutableArray<Booze*> *rageArray;
+@property (nonatomic) NSMutableArray<Booze*> *semiSocialArray;
+@property (nonatomic) NSMutableArray<Booze*> *messyArray;
 @end
 
 @implementation CollectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  
+    NSLog(@"Getting Booze");
+  
+//    NSURL *messyUrl = [NSURL URLWithString:@"https://lcboapi.com/products?order=alcohol_content.desc&per_page=30&page=3"];
+
+  [NetworkManager getInfo:self.url with:^(NSMutableArray *boozes) {
+      self.objects = boozes;
+//      NSLog(@"View controller got data: %@", self.objects);
+      [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        [self.collectionView reloadData];
+      }];
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([segue.identifier isEqualToString:@"detailViewSegue"]) {
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
+    Booze *booze = self.objects[indexPath.item];
+    
+    DetailViewController *dvc = segue.destinationViewController;
+    dvc.booze = booze;
+  }
 }
+
+
+
+
 
 
 #pragma mark - data source
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-  return 10;
+  return self.objects.count;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
   CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+  
+  [cell setImage: self.objects[indexPath.row]];
   
   return cell;
 }

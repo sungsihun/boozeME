@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CollectionViewController : UIViewController
-
+@property (nonatomic) NSURL *url;
 @end
