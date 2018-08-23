@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062F924C212F32B1006F0BDD /* 03 Bootylicious.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 062F9248212F32B0006F0BDD /* 03 Bootylicious.mp3 */; };
+		062F924D212F32B1006F0BDD /* Moonlight Sonata.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 062F9249212F32B0006F0BDD /* Moonlight Sonata.mp3 */; };
+		062F924E212F32B1006F0BDD /* 02 Party In The USA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 062F924A212F32B1006F0BDD /* 02 Party In The USA.mp3 */; };
+		062F924F212F32B1006F0BDD /* Party Up In Here.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 062F924B212F32B1006F0BDD /* Party Up In Here.mp3 */; };
 		06DA7B88212DB06400A21F3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B87212DB06400A21F3A /* AppDelegate.m */; };
 		06DA7B8E212DB06400A21F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B8C212DB06400A21F3A /* Main.storyboard */; };
 		06DA7B90212DB06500A21F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B8F212DB06500A21F3A /* Assets.xcassets */; };
@@ -23,10 +27,6 @@
 		06DA7BCC212DC44500A21F3A /* Booze.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BCB212DC44500A21F3A /* Booze.m */; };
 		06DA7BCF212DCAF700A21F3A /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7BCE212DCAF700A21F3A /* NetworkManager.m */; };
 		251878BE212F0EEC0094DD99 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251878BD212F0EEC0094DD99 /* AVFoundation.framework */; };
-		251878C4212F203F0094DD99 /* 02 Party In The USA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 251878C3212F203F0094DD99 /* 02 Party In The USA.mp3 */; };
-		251878C6212F205A0094DD99 /* Moonlight Sonata.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 251878C5212F205A0094DD99 /* Moonlight Sonata.mp3 */; };
-		251878CA212F21B60094DD99 /* Party Up In Here.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 251878C9212F21B60094DD99 /* Party Up In Here.mp3 */; };
-		251878CC212F282C0094DD99 /* 03 Bootylicious.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 251878CB212F282C0094DD99 /* 03 Bootylicious.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062F9248212F32B0006F0BDD /* 03 Bootylicious.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "03 Bootylicious.mp3"; path = "../../../../../Downloads/03 Bootylicious.mp3"; sourceTree = "<group>"; };
+		062F9249212F32B0006F0BDD /* Moonlight Sonata.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Moonlight Sonata.mp3"; path = "../../../../../Downloads/Moonlight Sonata.mp3"; sourceTree = "<group>"; };
+		062F924A212F32B1006F0BDD /* 02 Party In The USA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "02 Party In The USA.mp3"; path = "../../../../../Downloads/02 Party In The USA.mp3"; sourceTree = "<group>"; };
+		062F924B212F32B1006F0BDD /* Party Up In Here.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Party Up In Here.mp3"; path = "../../../../../Downloads/Party Up In Here.mp3"; sourceTree = "<group>"; };
 		06DA7B83212DB06400A21F3A /* boozeME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boozeME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DA7B86212DB06400A21F3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06DA7B87212DB06400A21F3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,10 +82,6 @@
 		06DA7BCD212DCAF700A21F3A /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		06DA7BCE212DCAF700A21F3A /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		251878BD212F0EEC0094DD99 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		251878C3212F203F0094DD99 /* 02 Party In The USA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "02 Party In The USA.mp3"; path = "../../../../../Music/iTunes/iTunes Media/Music/Miley Cyrus/The Time of Our Lives/02 Party In The USA.mp3"; sourceTree = "<group>"; };
-		251878C5212F205A0094DD99 /* Moonlight Sonata.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Moonlight Sonata.mp3"; path = "../../../../../Music/iTunes/iTunes Media/Music/Beethoven/Unknown Album/Moonlight Sonata.mp3"; sourceTree = "<group>"; };
-		251878C9212F21B60094DD99 /* Party Up In Here.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Party Up In Here.mp3"; path = "../../../../../Music/iTunes/iTunes Media/Music/DMX/_..And Then There Was X/Party Up In Here.mp3"; sourceTree = "<group>"; };
-		251878CB212F282C0094DD99 /* 03 Bootylicious.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "03 Bootylicious.mp3"; path = "../../../../../Music/iTunes/iTunes Media/Music/Destiny's Child/Survivor/03 Bootylicious.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,10 +153,10 @@
 				06DA7BBF212DB86400A21F3A /* CollectionViewController.m */,
 				06DA7BC1212DB87E00A21F3A /* DetailViewController.h */,
 				06DA7BC2212DB87E00A21F3A /* DetailViewController.m */,
-				251878C3212F203F0094DD99 /* 02 Party In The USA.mp3 */,
-				251878C5212F205A0094DD99 /* Moonlight Sonata.mp3 */,
-				251878CB212F282C0094DD99 /* 03 Bootylicious.mp3 */,
-				251878C9212F21B60094DD99 /* Party Up In Here.mp3 */,
+				062F924A212F32B1006F0BDD /* 02 Party In The USA.mp3 */,
+				062F9248212F32B0006F0BDD /* 03 Bootylicious.mp3 */,
+				062F9249212F32B0006F0BDD /* Moonlight Sonata.mp3 */,
+				062F924B212F32B1006F0BDD /* Party Up In Here.mp3 */,
 				06DA7B8F212DB06500A21F3A /* Assets.xcassets */,
 				06DA7B91212DB06500A21F3A /* LaunchScreen.storyboard */,
 				06DA7B94212DB06500A21F3A /* Info.plist */,
@@ -294,13 +294,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				251878C6212F205A0094DD99 /* Moonlight Sonata.mp3 in Resources */,
-				251878CC212F282C0094DD99 /* 03 Bootylicious.mp3 in Resources */,
-				251878CA212F21B60094DD99 /* Party Up In Here.mp3 in Resources */,
+				062F924D212F32B1006F0BDD /* Moonlight Sonata.mp3 in Resources */,
+				062F924C212F32B1006F0BDD /* 03 Bootylicious.mp3 in Resources */,
 				06DA7B93212DB06500A21F3A /* LaunchScreen.storyboard in Resources */,
-				251878C4212F203F0094DD99 /* 02 Party In The USA.mp3 in Resources */,
+				062F924E212F32B1006F0BDD /* 02 Party In The USA.mp3 in Resources */,
 				06DA7B90212DB06500A21F3A /* Assets.xcassets in Resources */,
 				06DA7B8E212DB06400A21F3A /* Main.storyboard in Resources */,
+				062F924F212F32B1006F0BDD /* Party Up In Here.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
