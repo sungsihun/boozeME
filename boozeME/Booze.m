@@ -13,6 +13,12 @@
 -(instancetype)initWithInfo:(NSDictionary*) info {
   if (self = [super init]) {
     
+    if (info[@"id"] == (id)[NSNull null]) {
+      _boozeID = @"no data";
+    } else {
+      _boozeID = info[@"id"];
+    }
+    
     if (info[@"name"] == (id)[NSNull null]) {
       _name = @"no data";
     } else {

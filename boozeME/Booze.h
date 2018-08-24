@@ -16,5 +16,6 @@
 @property (nonatomic) NSString *style;
 @property (nonatomic) NSString *alcoholContent;
 @property (nonatomic) UIImage *image;
+@property (nonatomic) NSString *boozeID;
 -(instancetype)initWithInfo:(NSDictionary*) info;
 @end
